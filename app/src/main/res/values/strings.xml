@@ -1072,6 +1072,457 @@ class BinaryTree\n
     </string>
 
 
+    <string name="ceasar">
+
+import java.util.*;\n
+public class st\n
+{\n
+&#x9;public static String s2= &#8220; &#8220;;\n
+&#x9;public static StringBuffer encript(String s1,int shift)\n
+&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;StringBuffer result=new StringBuffer();\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;s1.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;int value1=(int)s1.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;if(Character.isUpperCase(s1.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;char t=s1.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;int p=((t-65+shift)%26)+65;\n
+&#x9;&#x9;&#x9;&#x9;char p1=(char)p;\n
+&#x9;&#x9;&#x9;&#x9;result.append(p1);\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;else if(Character.isLowerCase(s1.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;char t=s1.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;int p=((t-97+shift)%26)+97;\n
+&#x9;&#x9;&#x9;&#x9;char p1=(char)p;\n
+&#x9;&#x9;&#x9;&#x9;result.append(p1);\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;String s2=result.toString();\n
+&#x9;&#x9;&#x9;return result;\n
+&#x9;&#x9;}\n
+&#x9;&#x9;
+&#x9;&#x9;\n
+&#x9;&#x9;public static StringBuffer decript(String s2,int shift)\n
+&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;StringBuffer result1=new StringBuffer();\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;s2.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;&#x9;if(Character.isUpperCase(s2.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;int value1=(int)s2.charAt(i)-64;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(value1 &#60;=shift)\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;char t=(char)((26-(shift-value1))+64);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;result1.append(t);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;char t=(char)((value1-shift)+64);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;result1.append(t);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;&#x9;if(Character.isLowerCase(s2.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;int value1=(int)s2.charAt(i)-96;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(value1 &#60;=shift)\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;char t=(char)((26-(shift-value1))+96);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;result1.append(t);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;char t=(char)((value1-shift)+96);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;result1.append(t);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;return result1;\n
+&#x9;&#x9;}\n
+&#x9;public static void main(String args[])\n
+&#x9;{\n
+&#x9;&#x9;st r=new st();\n
+&#x9;&#x9;Scanner sc=new Scanner(System.in);\n
+&#x9;&#x9;System.out.print( &#8220;Enter the word: &#8220;);\n
+&#x9;&#x9;String s1=sc.next();\n
+&#x9;&#x9;\n
+&#x9;&#x9;System.out.println(r.encript(s1,4));\n
+&#x9;&#x9;
+&#x9;&#x9;System.out.println(r.decript( &#8220;Xvmrgs &#8220;,4));\n
+&#x9;
+&#x9;}\n
+}\n
+</string>\n
+
+
+
+
+    <string name="playfair">\n
+import java.util.*;\n
+public class matrix\n
+{\n
+&#x9;public  void encrypt(String key,String word)\n
+&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;StringBuffer result=new StringBuffer();\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;int keyarr[]=new int[key.length()];\n
+&#x9;&#x9;&#x9;int arr[]=new int[26+key.length()];\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;key.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(Character.isUpperCase(key.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;keyarr[i]=(int)key.charAt(i)+32;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=(int)key.charAt(i)+32;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;keyarr[i]=(int)key.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=(int)key.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;int n=97;\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;for(int i=key.length();i &#60;arr.length;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;int count=0;\n
+&#x9;&#x9;&#x9;&#x9;for(int j=0;j &#60;key.length();j++)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(n==keyarr[j])\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;count++;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(n==107)\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;n++;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=n;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=n;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;&#x9;if(count &#62;0)\n
+&#x9;&#x9;&#x9;&#x9;{&#x9;\n
+&#x9;&#x9;&#x9;&#x9;arr[i]=0;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;n++;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;arr.length;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;if(arr[i]==0)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print( &#8220; &#8220;);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;result.append((char)arr[i]);\n
+&#x9;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;char mat[][]=new char[5][5];\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;int t=0;\n
+&#x9;&#x9;&#x9;String str1=result.toString();\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;5;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;for(int j=0;j &#60;5;j++)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;mat[i][j]=str1.charAt(t);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print(str1.charAt(t)+ &#8220;  &#8220;);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;t++;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;System.out.println();\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;int start=0;\n
+&#x9;&#x9;&#x9;&#x9;int end=1;\n
+&#x9;&#x9;&#x9;&#x9;int r1=word.length()/2;\n
+&#x9;&#x9;&#x9;&#x9;int srow[]=new int[r1];\n
+&#x9;&#x9;&#x9;&#x9;int scol[]=new int[r1];\n
+&#x9;&#x9;&#x9;&#x9;int erow[]=new int[r1];\n
+&#x9;&#x9;&#x9;&#x9;int ecol[]=new int[r1];\n
+&#x9;&#x9;&#x9;&#x9;int i2=0;\n
+&#x9;&#x9;&#x9;&#x9;int i3=0;\n
+&#x9;&#x9;&#x9;&#x9;for(int i1=0;i1 &#60;r1;i1++)\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;char ss=word.charAt(start);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;char en=word.charAt(end);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;for(int i=0;i &#60;5;i++)\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;for(int j=0;j &#60;5;j++)\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if((int)ss==(int)mat[i][j])\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;srow[i2]=i;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;scol[i2]=j;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;i2++;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else if((int)en==(int)mat[i][j])\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;erow[i3]=i;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;ecol[i3]=j;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;i3++;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;start=start+2;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;end=end+2;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;for(int i=0;i &#60;r1;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;if(srow[i]==erow[i])\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print(mat[srow[i]][(scol[i]+1)%5]+ &#8220; &#8220;+mat[erow[i]][(ecol[i]+1)%5]);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;else if(ecol[i]== scol[i])\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print(mat[(srow[i]+1)%5][scol[i]]+ &#8220; &#8220;+mat[(erow[i]+1)%5][ecol[i]]);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;else \n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print(mat[srow[i]][ecol[i]]+ &#8220; &#8220;+mat[erow[i]][scol[i]]);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;}\n
+&#x9;\n
+&#x9;public static void main(String args[])\n
+&#x9;{\n
+&#x9;&#x9;Scanner sc=new Scanner(System.in);\n
+&#x9;&#x9;String s[][]=new String[5][5];\n
+&#x9;&#x9;System.out.println( &#8220;Enter the text &#8220;);\n
+&#x9;&#x9;String s1=sc.nextLine();\n
+&#x9;&#x9;System.out.println( &#8220;Enter the word &#8220;);\n
+&#x9;&#x9;String s2=sc.nextLine();\n
+&#x9;&#x9;matrix m1=new matrix();\n
+&#x9;\n
+&#x9;&#x9;m1.encrypt(s1,s2);\n
+&#x9;}\n
+}\n
+
+</string>\n
+
+
+
+    <string name="key">
+&#x9;&#x9;
+import java.util.*;\n
+public class key1\n
+{\n
+&#x9;void encrypt(String key,String word)\n
+&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;StringBuffer result=new StringBuffer();\n
+&#x9;&#x9;&#x9;//String key= &#8220;CamPus &#8220;;\n
+&#x9;&#x9;&#x9;int keyarr[]=new int[key.length()];\n
+&#x9;&#x9;&#x9;int arr[]=new int[26+key.length()];\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;key.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(Character.isUpperCase(key.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;keyarr[i]=(int)key.charAt(i)+32;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=(int)key.charAt(i)+32;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;keyarr[i]=(int)key.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=(int)key.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;int n=97;\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;for(int i=key.length();i &#60;arr.length;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;int count=0;\n
+&#x9;&#x9;&#x9;&#x9;for(int j=0;j &#60;key.length();j++)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(n==keyarr[j])\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;count++;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//j=key.length();\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=n;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;if(count &#62;0)\n
+&#x9;&#x9;&#x9;&#x9;{&#x9;\n
+&#x9;&#x9;&#x9;&#x9;//System.out.println(count);\n
+&#x9;&#x9;&#x9;&#x9;arr[i]=0;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;n++;\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;//String word= &#8220;trincomalee &#8220;;\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;arr.length;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;if(arr[i]==0)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print( &#8220; &#8220;);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;result.append((char)arr[i]);\n
+&#x9;&#x9;&#x9;&#x9;//System.out.print((char)arr[i]);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;String str1=result.toString();\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;word.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;int t=(int)word.charAt(i)-97;\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;System.out.print(str1.charAt(t));\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;}\n
+&#x9;&#x9;\n
+&#x9;&#x9;\n
+&#x9;&#x9;void decrypt(String key,String word)\n
+&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;StringBuffer result=new StringBuffer();\n
+&#x9;&#x9;&#x9;//String key= &#8220;CamPus &#8220;;\n
+&#x9;&#x9;&#x9;int keyarr[]=new int[key.length()];\n
+&#x9;&#x9;&#x9;int arr[]=new int[26+key.length()];\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;key.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(Character.isUpperCase(key.charAt(i)))\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;keyarr[i]=(int)key.charAt(i)+32;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=(int)key.charAt(i)+32;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;keyarr[i]=(int)key.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=(int)key.charAt(i);\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;int n=97;\n
+&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;for(int i=key.length();i &#60;arr.length;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;int count=0;\n
+&#x9;&#x9;&#x9;&#x9;for(int j=0;j &#60;key.length();j++)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if(n==keyarr[j])\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;count++;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//j=key.length();\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;arr[i]=n;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;&#x9;if(count &#62;0)\n
+&#x9;&#x9;&#x9;&#x9;{&#x9;\n
+&#x9;&#x9;&#x9;&#x9;//System.out.println(count);\n
+&#x9;&#x9;&#x9;&#x9;arr[i]=0;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;n++;\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;
+&#x9;&#x9;&#x9;for(int i=0;i &#60;arr.length;i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;if(arr[i]==0)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print( &#8220; &#8220;);\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;else\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;result.append((char)arr[i]);\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;String str1=result.toString();\n
+&#x9;&#x9;&#x9;int count=0;\n
+&#x9;&#x9;&#x9;for(int i=0;i &#60;word.length();i++)\n
+&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;for(int j=0;j &#60;str1.length();j++)\n
+&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;&#x9;&#x9;if((int)word.charAt(i)==(int)str1.charAt(j))\n
+&#x9;&#x9;&#x9;&#x9;&#x9;{\n
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;System.out.print((char)(j+97));\n
+&#x9;&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;&#x9;&#x9;\n
+&#x9;&#x9;&#x9;}\n
+&#x9;&#x9;}\n
+&#x9;\n
+&#x9;public static void main(String args[])\n
+&#x9;{\n
+&#x9;&#x9;Scanner sc=new Scanner(System.in);\n
+&#x9;&#x9;System.out.println( &#8220;Enter the key &#8220;);\n
+&#x9;&#x9;String s1=sc.nextLine();\n
+&#x9;&#x9;System.out.println( &#8220;Enter the word &#8220;);\n
+&#x9;&#x9;String s2=sc.nextLine();\n
+&#x9;&#x9;
+&#x9;&#x9;key1 k=new key1();\n
+&#x9;&#x9;k.encrypt(s1,s2);\n
+&#x9;&#x9;System.out.println();\n
+&#x9;&#x9;System.out.println( &#8220;Enter the cypher &#8220;);\n
+&#x9;&#x9;String s3=sc.nextLine();\n
+&#x9;&#x9;k.decrypt(s1,s3);\n
+&#x9;&#x9;\n
+&#x9;}\n
+}\n
+
+</string>
+    &#x9;&#x9;
+    &#x9;&#x9;
+    &#x9;&#x9;
+    &#x9;&#x9;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     &#009;<string name="title_activity_arith">Arith</string>
     <string name="title_activity_max">Max</string>
     <string name="title_activity_sum">Sum</string>
@@ -1106,5 +1557,10 @@ class BinaryTree\n
     <string name="title_activity_tree">Binary tree</string>
     <string name="title_activity_binarysearch">Binary search</string>
     <string name="title_activity_srch">Search</string>
+    <string name="title_activity_year3semi1">Year3semi1</string>
+    <string name="title_activity_datasecurity">Data security</string>
+    <string name="title_activity_ceasar">Ceasar cipher</string>
+    <string name="title_activity_key">key</string>
+    <string name="title_activity_playfair">playfair cipher</string>
 
 </resources>

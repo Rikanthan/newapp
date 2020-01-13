@@ -61,14 +61,14 @@ public class ScrollingActivity extends AppCompatActivity {
         Intent intent=new Intent(this, year2semi2.class);
         startActivity(intent);
     }
-
+    */
 
     public  void y3s1(View v)
     {
         Intent intent=new Intent(this, year3semi1.class);
         startActivity(intent);
     }
-
+    /*
     public  void y3s2(View v)
     {
         Intent intent=new Intent(this, year3semi2.class);

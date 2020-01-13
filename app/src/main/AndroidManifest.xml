@@ -10,13 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".playfair"
+            android:label="@string/title_activity_playfair"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".key"
+            android:label="@string/title_activity_key"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ceasar"
+            android:label="@string/title_activity_ceasar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".datasecurity"
+            android:label="@string/title_activity_datasecurity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".year3semi1"
+            android:label="@string/title_activity_year3semi1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".srch"
             android:label="@string/title_activity_srch"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".binarysearch"
             android:label="@string/title_activity_binarysearch"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".tree"
             android:label="@string/title_activity_tree"
