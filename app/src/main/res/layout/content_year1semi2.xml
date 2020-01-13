@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arrays"
+        android:onClick="array"/>
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stack"
+        android:onClick="stack"/>
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="queue"
+        android:onClick="queue"/>
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="searching"
+        android:onClick="search"/>
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sorting"
+        android:onClick="sort"/>
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="linkedlist"
+        android:onClick="linkedlist"/>
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tree"
+        android:onClick="tree"/>
+</LinearLayout>

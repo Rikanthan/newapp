@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".queue"
+    tools:showIn="@layout/activity_queue">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="queue"
+        android:onClick="queue"/>
+
+    <Button
+        android:id="@+id/button37"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="testqueue"
+        android:onClick="testq"/>
+
+    <Button
+        android:id="@+id/button36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="palindrome"
+        android:onClick="pal"/>
+
+    <Button
+        android:id="@+id/button38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="circle queue"
+        android:onClick="cqu"
+        />
+
+</LinearLayout>
