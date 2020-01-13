@@ -1,0 +1,1110 @@
+<resources>
+    <string name="app_name">Cs</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_year1semi1">C++ Basic</string>
+    <string name="title_activity_scrolling">Computer science(TCEUSL)</string>
+    <string name="arithmetric">#include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int a, b, sum, multipli, subtra, divi, mod;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>Enter first no:<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>a;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>Enter second no:<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>b;\n
+&#009;sum = a+b;\n
+&#009;multipli = a*b;\n
+&#009;subtra = a-b;\n
+&#009;divi = a/b;\n
+&#009;mod =a%b;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>sum = <p> &#8220;</p><p> &#8810;</p>sum<p> &#8810;</p>endl;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>multipli = <p> &#8220;</p><p> &#8810;</p>multipli<p> &#8810;</p>endl;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>subtra = <p> &#8220;</p><p> &#8810;</p>subtra<p> &#8810;</p>endl;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>divi = <p> &#8220;</p><p> &#8810;</p>divi<p> &#8810;</p>endl;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>mod = <p> &#8220;</p><p> &#8810;</p>mod<p> &#8810;</p>endl;\n
+&#009;return 0;\n
+}
+
+
+
+
+    </string>
+
+    <string name="max">
+    #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+    using namespace std;\n
+    int main()\n
+    {\n
+    int a;\n
+    int n=0;\n
+    int max;\n
+    while (n<p>&#60;</p>10)\n
+    {\n
+    \n
+    cout<p> &#8810;</p><p> &#8220;</p>enter the numbers<p> &#8220;</p>;\n
+    cin<p> &#8811;</p>a;\n
+    n=n+1;\n
+    if (max<p>&#60;</p>a)\n
+    {\n
+    max=a;\n
+    }\n
+    \n
+    }\n
+    cout<p> &#8810;</p><p> &#8220;</p>max <p> &#8220;</p><p> &#8810;</p>a;\n
+    }\n
+</string>
+    <string name="sum">  #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int a;\n
+&#009;int n=0;\n
+&#009;int sum=0;\n
+&#009;while (n<p>&#60;</p>10)\n
+&#009;{\n
+&#009;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>enter the numbers<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>a;\n
+&#009;n=n+1;\n
+&#009;&#009;if (a<p>&#60;</p>0)
+&#009;&#009;{\n
+&#009;&#009;&#009;n=12;\n
+&#009;&#009;}\n
+&#009;&#009;else if (a<p>&#62;</p>0)\n
+&#009;&#009;sum=sum+a;\n
+
+&#009;}\n
+      cout<p> &#8810;</p><p> &#8220;</p>sum <p> &#8220;</p><p> &#8810;</p>sum;\n
+}\n</string>
+
+    <string name="multi"> #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+    using namespace std;\n
+    int main()\n
+    {\n
+    int a;\n
+    int x;\n
+    int n=0;\n
+    cout<p> &#8810;</p><p> &#8220;</p>enter the number to print multiplication table<p> &#8220;</p>;\n
+    cin<p> &#8811;</p>a;\n
+    while (n<p>&#60;</p>12)\n
+    {\n
+    n=n+1;\n
+    x=a*n;\n
+    cout<p> &#8810;</p>a<p> &#8810;</p><p> &#8220;</p>*<p> &#8220;</p><p> &#8810;</p>n<p> &#8810;</p><p> &#8220;</p>=<p> &#8220;</p><p> &#8810;</p>x<p> &#8810;</p>endl;\n
+
+    }\n
+    }\n</string>
+
+    <string name="prime">
+ #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int count=0;\n
+&#009;int a,n;\n
+&#009;n=1;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>enter the number=<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>a;\n
+&#009;while (n<p>&#60;
+</p>=a)\n
+&#009;{\n
+&#009;&#009;if(a%n==0)\n
+&#009;&#009;{\n
+&#009;&#009;&#009;count=count+1;\n
+&#009;&#009;}\n
+&#009;&#009;n=n+1;\n
+&#009;}\n
+&#009;if(count==2)\n
+&#009;{\n
+&#009;&#009;cout<p> &#8810;</p><p> &#8220;</p>it is a prime number<p> &#8220;</p>;\n
+&#009;}\n
+&#009;else\n
+&#009;{\n
+&#009;&#009;cout<p> &#8810;</p><p> &#8220;</p>it is not a prime number<p> &#8220;</p>;\n
+&#009;}\n
+&#009;\n
+}\n
+</string>
+
+
+    <string name="factorial">
+ #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int a;\n
+&#009;int n=1;\n
+&#009;int b=1;\n
+&#009;{\n
+&#009;&#009;cout<p> &#8810;</p><p> &#8220;</p>enter the number<p> &#8220;</p>;\n
+&#009;&#009;cin<p> &#8811;</p>a;\n
+&#009;}\n
+&#009;while (n<p>&#60;
+</p>=a)\n
+&#009;{\n
+&#009;\n
+&#009;&#009;b=n*b;\n
+&#009;&#009;n=n+1;\n
+&#009;}\n
+        cout<p> &#8810;</p>b;\n
+}\n
+</string>
+
+
+    <string name="checksign">
+    #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+    using namespace std;\n
+    int main()\n
+    {\n
+    int a;\n
+    cout<p> &#8810;</p><p> &#8220;</p>enter the no<p> &#8220;</p>;\n
+    cin<p> &#8811;</p>a;\n
+    if (a==0)\n
+    cout<p> &#8810;</p><p> &#8220;</p>Zero<p> &#8220;</p>;\n
+    else if (a<p>&#62;</p>0)\n
+    cout<p> &#8810;</p><p> &#8220;</p>possitive<p> &#8220;</p>;\n
+    else\n
+    cout<p> &#8810;</p><p> &#8220;</p>negative<p> &#8220;</p>;\n
+    return 0;\n
+    }\n
+</string>
+
+
+    <string name="checkmax">
+    #include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+    using namespace std;\n
+    int main()\n
+    {\n
+    int a,b,c;\n
+    cout<p> &#8810;</p><p> &#8220;</p>enter the first no<p> &#8220;</p>;\n
+    cin<p> &#8811;</p>a;\n
+    cout<p> &#8810;</p><p> &#8220;</p>enter the second no<p> &#8220;</p>;\n
+    cin<p> &#8811;</p>b;\n
+    cout<p> &#8810;</p><p> &#8220;</p>enter the third no<p> &#8220;</p>;\n
+    cin<p> &#8811;</p>c;\n
+    if (a<p>&#62;</p>b&#38;&#38;a<p>&#62;</p>c)\n
+    cout<p> &#8810;</p><p> &#8220;</p>first no is maximum<p> &#8220;</p>;\n
+    else if (b<p>&#62;</p>a&#38;&#38;b<p>&#62;</p>c)\n
+    cout<p> &#8810;</p><p> &#8220;</p>second no is maximum<p> &#8220;</p>;\n
+    else \n
+
+    cout<p> &#8810;</p><p> &#8220;</p>third no is maximum<p> &#8220;</p>;\n
+    }\n
+    </string>
+
+
+    <string name="checkrighttriangle">
+#include<p>&#60;
+</p>iostream<p>&#62;</p>\n
+using namespace std;\n
+int main()\n
+{\n
+
+&#009;int a,b,c;\n
+&#009;&#009;cout<p> &#8810;</p><p> &#8220;</p>enter the first length<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>a;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>enter the second length<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>b;\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>enter the third length<p> &#8220;</p>;\n
+&#009;cin<p> &#8811;</p>c;\n
+&#009;if ((a*a)==(b*b)+(c*c))\n
+{\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>right triangle<p> &#8220;</p>;\n
+}\n
+&#009;else if ((b*b)==(a*a)+(c*c))\n
+{\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>right triangle<p> &#8220;</p>;\n
+}\n
+&#009;&#009;else if ((c*c)==(a*a)+(b*b))\n
+{\n
+&#009;cout<p> &#8810;</p><p> &#8220;</p>right triangle<p> &#8220;</p>;\n
+}\n
+&#009;else\n
+{\n
+&#009;cout <p> &#8810;</p><p> &#8220;</p>not right triangle<p> &#8220;</p>;\n
+}\n
+&#009;return 0;\n
+&#009;\n
+}
+</string>
+
+
+    <string name="insertion">
+ #include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int a[10]={1,2,4,5,6,87,46,23,1995,65},i;\n
+&#009;for (i=0;i&#60;10;i++)\n
+&#009;{\n
+&#009;&#009;cout &#8810; &#8220;number is &#8220; &#8810;a[i] &#8810;&#8220; and &#8220; &#8810;&#8220;index is &#8220; &#8810;i+1 &#8810;endl;\n
+&#009;}\n
+\n&#009;
+}
+
+</string>
+
+
+    <string name="reverse">
+ #include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+        char ch[10]={&#8217;a&#8217;,&#8217;v&#8217;,&#8217;c&#8217;,&#8217;q&#8217;,&#8217;m&#8217;,&#8217;n&#8217;,&#8217;o&#8217;,&#8217;p&#8217;,&#8217;r&#8217;,&#8217;s&#8217;};\n
+        for (int b=0;b &#60;10;b++)\n
+&#009;{\n
+&#009;&#009;cout &#8810;ch[b] &#8810;endl;\n
+&#009;}\n
+&#009;
+&#009;cout &#8810;&#8220;reverse order is\n&#8220;;\n
+&#009;for (int b=9;b &#62;=0;b--)\n
+&#009;{\n
+&#009;&#009;cout &#8810;ch[b] &#8810;endl;\n
+&#009;}\n
+}\n
+</string>
+
+
+    <string name="max_min">
+ #include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int num[10],i;\n
+&#009;int sum=0, max=0, min;\n
+&#009;float avg;\n
+&#009;cout &#8810;&#8220;enter the 10 numbers = &#8220;;\n
+&#009;for (i=0;i &#60;10;i++)\n
+&#009;{\n
+&#009;&#009;cin&#8811;num[i];\n
+&#009;}\n
+&#009;for (i=0;i &#60;10;i++)\n
+&#009;{\n
+    &#009;sum=sum+num[i];&#009;\n&#009;
+&#009;}\n
+&#009;avg=sum/10;\n
+&#009;max=num[0];\n
+&#009;min=num[0];\n
+&#009;for (i=0;i &#60;10;i++)\n
+&#009;{\n
+&#009;&#009;if (max &#60;num[i])\n
+&#009;&#009;{\n
+&#009;&#009;&#009;max=num[i];\n
+\n
+&#009;    }\n
+&#009;&#009;else if(min>num[i])\n
+&#009;&#009; {\n
+&#009;&#009; &#009;min=num[i];\n
+&#009;&#009; }\n
+&#009;&#009; \n
+&#009;&#009;
+&#009;}\n
+&#009;
+&#009;cout &#8810;&#8220;sum is =&#8220; &#8810;sum &#8810;endl;\n
+&#009;cout &#8810;&#8220;average is=&#8220; &#8810;avg &#8810;endl;\n
+&#009;cout &#8810;&#8220;maximum is =&#8220; &#8810;max &#8810;endl;\n
+&#009;cout &#8810;&#8220;minimum is =&#8220; &#8810;min &#8810;endl;\n
+}\n
+
+</string>
+
+
+    <string name="square">
+#include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int alfha[50],i,m,n;\n
+&#009;
+&#009;while (i &#60;25)\n
+&#009;{\n
+&#009;&#009;alfha[i]=i*i;\n
+&#009;&#009;i=i+1;\n
+&#009;}\n
+&#009;while (i &#60;50)\n
+&#009;{\n
+&#009;&#009;alfha[i]=3*i;\n
+&#009;&#009;i=i+1;\n
+&#009;}\n
+&#009;for(n=0;n &#60;50;n=n+10)\n
+&#009;&#009; { \n
+&#009;&#009;   for(m=n;m &#60;n+10;m++)\n
+&#009;&#009;   {\n
+&#009;&#009;&#009;cout &#8810;alfha[m] &#8810;endl;\n
+&#009;    &#009;}\n
+&#009;&#009;    cout &#8810;endl;\n
+&#009;&#009;&#009;}\n
+&#009;&#009;&#009;return 0;\n
+}\n
+
+</string>
+
+
+    <string name="search">
+#include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int m=0,i;\n
+&#009;double b[20]={2.2,5.6,1.1,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.1,3.2,3.5,4.5,9.5,6.7,6.8,7.5,8.8,9.1};
+\n&#009;double j;\n
+&#009;cout &#8810; &#8220;enter the number=  &#8220;;\n
+&#009;cin&#8811;j;\n
+    for (i=0;i &#60;20;i++)\n
+    {\n
+    &#009;if (b[i]==j)\n
+    &#009;{\n
+    &#009;&#009;m=m+1;\n
+&#009;&#009;}\n
+&#009;}\n
+&#009;if (m==0)\n
+&#009;{\n
+&#009;&#009;cout &#8810; &#8220;not found &#8220;;\n
+&#009;}\n
+&#009;else \n
+&#009;{\n
+&#009;&#009;cout &#8810; &#8220;Number is there &#8220;;\n
+&#009;}\n
+}\n
+
+</string>
+
+
+    <string name="palindrome">
+ #include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int q,count=0;\n
+&#009;char m[100];\n
+&#009;cout &#8810; &#8220;enter the number= &#8220;;\n
+&#009;cin&#8811;m;\n
+&#009;q=strlen(m);\n
+&#009; 
+for (int c=0;c &#60;q;c++)\n
+{\n
+    for (int b=q;b &#62;=0;b--)\n
+    {\n
+&#009;
+      if(m[b]==m[c])\n
+     {\n
+     &#009;count=count+1;\n
+      }\n
+}\n
+}\n
+if (count==q)\n
+{\n
+&#009;cout &#8810; &#8220;not palindrome &#8220;;
+\n}\n
+else \n
+{\n
+&#009;cout &#8810; &#8220;palindrome &#8220;;\n
+}\n
+}
+</string>
+
+
+    <string name="ascending">
+#include&#60;
+iostream&#62;\n
+using namespace std;\n
+int main()\n
+{\n
+&#009;int mynum[10],n,m,tmp;\n
+&#009;cout &#8810; &#8220;enter the 10 numbers = \n &#8220;;
+\n&#009;while (n&#60;10)\n
+&#009;{\n
+&#009; cin&#8811;mynum[n];\n
+&#009; n=n+1;&#009;\n
+&#009;}\n
+&#009;for (n=0;n&#60;10;n++)\n
+&#009;{\n
+&#009;&#009;for (m=0;m&#60;9;m++)\n
+&#009;&#009;{\n
+&#009;&#009;&#009;if(mynum[m]&#62;mynum[m+1])\n
+&#009;&#009;&#009;{\n
+&#009;&#009;&#009;&#009;tmp=mynum[m];\n
+&#009;&#009;&#009;&#009;mynum[m]=mynum[m+1];\n
+&#009;&#009;&#009;&#009;mynum[m+1]=tmp;\n
+&#009;&#009;&#009;}\n
+&#009;&#009;}\n
+&#009;}\n
+&#009;cout &#8810; &#8220;ascending order is &#8220; &#8810;endl;\n
+&#009;for (n=0;n&#60;10;n++)\n
+&#009;{\n
+&#009;
+&#009;&#009;cout &#8810;mynum[n] &#8810;endl;\n
+&#009;}\n
+}\n
+
+</string>
+
+    <string name="insert_a">
+import java.util.*;\n
+public class insert\n
+{\n
+&#160;public static void main(String args[])\n
+&#160;{\n
+&#160;int a[]=new int[5];//we declaring 5 elements in array\n
+&#160;Scanner sc=new Scanner(System.in);\n
+
+&#160;&#160;for(int i=0;i&#60;5;i++)\n
+&#160;&#160;{\n
+&#160;&#160;a[i]=sc.nextInt();//we get input from user
+\n&#160;&#160;}\n
+
+&#160;for(int i=0;i&#60;5;i++)\n
+&#160;{\n
+&#160;System.out.println(a[i]);//we print array\n
+&#160;}\n
+
+&#160;}\n
+}\n
+
+</string>
+
+
+    <string name="arraysearch">
+import java.util.Scanner;\n
+public class arraysearch\n
+{\n
+public static void main(String args[])\n
+{\n
+int a[]= {4,56,15,42,96};\n
+int bb;\n
+int c=1;\n
+System.out.println(&#8220;enter the number&#8220;);\n
+Scanner b= new Scanner(System.in);\n
+bb = b.nextInt();.\n
+for(int i=0;i&#60;5;i++)\n
+{\n
+
+if(bb==a[i])\n
+{\n
+ c=c+1;\n
+}\n
+}\n
+ if (c==2)\n
+{\n
+ System.out.println(&#8220;element is there&#8220;);\n
+}\n
+else\n
+{
+System.out.println(&#8220;element is not there&#8220;);\n
+}\n
+}\n
+}\n
+
+</string>
+
+    <string name="duplicate">
+
+
+public class duplicate\n
+{\n
+public static void main(String args[])\n
+{\n
+int a[]= {4,56,60,61,15,42,96};\n
+int c=1;\n
+for(int i=0;i&#60;7;i++)\n
+{\n
+for(int j=i+1;j&#60;7;j++)\n
+{\n
+if(a[j]==a[i])\n
+{\n
+ c=c+1;\n
+}\n
+}\n
+}\n
+ if (c==2)\n
+{\n
+ System.out.println(&#8220;element is there&#8220;);\n
+}\n
+else \n
+{\n
+System.out.println(&#8220;element is not there&#8220;);\n
+}\n
+}\n
+}
+
+
+</string>
+
+
+    <string name="common1">
+
+public class common1\n
+{\n
+public static void main(String args[])\n
+{\n
+int a[]= {4,56,60,61,15,42,96};\n
+int b[]= {12,55,26,42,48,65,24};\n
+int c=1;\n
+for(int i=0;i&#60;7;i++)\n
+{\n
+for(int j=0;j&#60;7;j++)\n
+{\n
+if(a[i]==b[j])\n
+{\n
+ c=c+1;\n
+}\n
+}\n
+}\n
+ System.out.println(c);\n
+ if (c==2)\n
+{\n
+ System.out.println(&#8220;common element is there&#8220;);\n
+}\n
+else \n
+{\n
+System.out.println(&#8220;common element is not there&#8220;);\n
+}\n
+}\n
+}
+
+
+
+</string>
+
+
+    <string name="common2">
+
+
+public class common2\n
+{\n
+public static void main(String args[])\n
+{\n
+String a[]= {&#8220;5&#8220;,&#8220;6&#8220;,&#8220;b&#8220;,&#8220;61&#8220;,&#8220;a&#8220;,&#8220;42&#8220;,&#8220;96&#8220;};
+\nString b[]= {&#8220;12&#8220;,&#8220;55&#8220;,&#8220;26&#8220;,&#8220;b&#8220;,&#8220;48&#8220;,&#8220;65&#8220;,&#8220;a&#8220;};
+\nint c=0;\n
+for(int i=0;i&#60;7;i++)\n
+{\n
+for(int j=0;j&#60;7;j++)\n
+{\n
+if(a[i]==b[j])\n
+{\n
+ c=c+1;\n
+}\n
+}\n
+}\n
+ System.out.println(c);\n
+ if (c==0)\n
+{\n
+ System.out.println(&#8220;common element is not there&#8220;);\n
+}\n
+else \n
+{\n
+System.out.println(c);\n
+System.out.println(&#8220;common element is  there&#8220;);\n
+}\n
+}\n
+}
+
+</string>
+
+
+    <string name="queue">
+public class qu\n
+{\n
+&#009;int rear=-1;\n
+&#009;int front=0;\n
+&#009;int size=5;\n
+&#009;int que[]=new int[size];\n
+&#009;
+&#009;public void enqueue(int elt)\n
+&#009;\n
+&#009;{\n
+&#009;&#009;rear=rear+1;\n
+&#009;&#009;que[rear]=elt;\n
+&#009;}\n
+&#009;public int dequeue()\n
+&#009;{\n
+&#009;&#009;int t=que[front];\n
+&#009;&#009;front=front+1;\n
+&#009;&#009;return(t);\n
+&#009;}\n
+&#009;public boolean isEmpty()\n
+&#009;{\n
+&#009;&#009;return(front==size);\n
+&#009;}\n
+&#009;public boolean isFull()\n
+&#009;{\n
+&#009;&#009;return(rear==size-1);\n
+&#009;}\n
+}
+
+
+</string>
+
+
+    <string name="testqueue">
+import java.util.Scanner;\n
+public class testq\n
+{\n
+&#009;public static void main(String args[])\n
+&#009;{\n
+&#009;&#009;Scanner sc=new Scanner(System.in);\n
+&#009;&#009;qu p=new qu();\n
+&#009;&#009;
+&#009;&#009;
+&#009;&#009;while(!p.isFull())\n
+&#009;&#009;{\n
+&#009;&#009;&#009;int ele=sc.nextInt();\n
+&#009;&#009;&#009;p.enqueue(ele);\n
+&#009;&#009;}\n
+&#009;&#009;System.out.println( &#8220;elements are &#8220;);\n
+&#009;&#009;while (!p.isEmpty())\n
+&#009;&#009;{\n
+&#009;&#009;&#009;System.out.println(p.dequeue());\n
+&#009;&#009;}\n
+&#009;&#009;&#009;
+&#009;}\n
+}
+
+</string>
+
+
+    <string name="qupalin">
+&#009;import java.util.Scanner;\n
+public class qpal\n
+{\n
+&#009;public static void main(String args[])\n
+&#009;{\n
+     
+&#009;  Scanner sc = new Scanner(System.in);\n
+&#009;  System.out.println( &#8220;enter the string &#8220;);\n
+&#009;  String s=sc.next();\n
+&#009;   que p1 = new qpal();\n
+&#009;   for (int i=0;i&#60;s.length();i++)\n
+&#009;   {\n
+&#009;   char ch= s.charAt(i);\n
+&#009;   p1.enqueue(ch);\n
+&#009;   }\n
+&#009;   String rev= &#8220; &#8220;;\n
+&#009;   while (!p1.isEmpty())\n
+&#009;   {\n
+&#009;
+&#009;   rev=rev+p1.dequeue();\n
+&#009;   }\n
+&#009;   if(s.equals(rev))\n
+&#009;   {\n
+&#009;&#009;   System.out.println( &#8220; palindrome &#8220;);\n
+&#009;   }\n
+&#009;   else\n
+&#009;   {\n
+&#009;&#009;   System.out.println( &#8220;not palindrome &#8220;);\n
+&#009;   }\n
+&#009;   }\n
+}
+
+</string>
+
+    &#009;<string name="single">
+\u0020
+public class linkedlist\n
+{\n
+&#009;Node head;\n
+&#009;public linkedlist()\n
+&#009;{\n
+&#009;&#009;this.head=null;\n
+&#009;}\n
+&#009;public class Node\n
+&#009;{\n
+&#009;public int data;\n
+&#009;public Node next;\n
+&#009;&#009;public Node(int data1,Node next1)\n
+&#009;&#009;{\n
+&#009;&#009;&#009;this.data=data1;\n
+&#009;&#009;&#009;this.next=next1;\n
+&#009;&#009;}\n
+&#009;}\n
+&#009;public void addfront(int data)\n
+&#009;{\n
+&#009;&#009;head=new Node(data,head);\n
+&#009;}\n
+&#009;&#009;\n
+&#009;&#009;public void addlast(int data)\n
+&#009;&#009;{\n
+&#009;&#009;&#009;Node curNode=head;\n
+&#009;&#009;&#009;Node temp=new Node(data,null);\n
+&#009;&#009;&#009;while(curNode.next!=null)\n
+&#009;&#009;&#009;{\n
+&#009;&#009;&#009;&#009;curNode=curNode.next;\n
+&#009;&#009;&#009;&#009;\n
+&#009;&#009;}\n
+&#009;&#009;curNode.next=temp;&#009;\n
+&#009;&#009;}\n
+&#009;&#009;\n
+&#009;&#009;\n
+&#009;&#009;&#009;public void print()\n
+&#009;&#009;&#009;{\n
+&#009;&#009;&#009;&#009;Node curNode=head;\n
+&#009;&#009;&#009;&#009;while(curNode!=null)\n
+&#009;&#009;&#009;&#009;{\n
+&#009;&#009;&#009;&#009;&#009;System.out.println(curNode.data);\n
+&#009;&#009;&#009;&#009;&#009;curNode=curNode.next;\n
+&#009;&#009;&#009;&#009;&#009;
+&#009;&#009;\n
+&#009;&#009;&#009;&#009;}\n
+&#009;&#009;&#009;&#009;
+&#009;&#009;&#009;}\n
+&#009;&#009;&#009;&#009;public static void main(String args[])\n
+&#009;&#009;&#009;&#009;{\n
+&#009;&#009;&#009;&#009;&#009;linkedlist list1=new linkedlist();\n
+&#009;&#009;&#009;&#009;&#009;list1.addfront(6);\n
+&#009;&#009;&#009;&#009;&#009;list1.addfront(9);\n
+&#009;&#009;&#009;&#009;&#009;list1.addfront(1);\n
+&#009;&#009;&#009;&#009;&#009;list1.addlast(8);\n
+&#009;&#009;&#009;&#009;&#009;list1.addlast(5);\n
+&#009;&#009;&#009;&#009;&#009;list1.addfront(1);\n
+&#009;&#009;&#009;&#009;&#009;list1.addlast(8);\n
+&#009;&#009;&#009;&#009;&#009;list1.addlast(5);\n
+&#009;&#009;&#009;&#009;&#009;list1.addfront(1);\n
+&#009;&#009;&#009;&#009;&#009;
+&#009;&#009;&#009;&#009;&#009;list1.print();\n
+&#009;&#009;&#009;&#009;&#009;
+&#009;&#009;&#009;&#009;}\n
+&#009;&#009;&#009;}
+&#009;&#009;&#009;
+&#009;&#009;&#009;</string>
+
+    &#009;<string name="circularqueue">
+public class cqu\n
+{\n
+&#009;int rear=-1;\n
+&#009;int front=-1;\n
+&#009;int size=5;\n
+&#009;int que[]=new int[size];\n
+&#009;\n
+&#009;public void enqueue(int elt)\n
+&#009;\n
+&#009;{\n
+&#009;&#009;rear = (rear + 1) % que.length;\n
+&#009;&#009;que[rear]=elt;\n
+&#009;&#009;
+&#009;&#009;
+&#009;}\n
+&#009;public int dequeue()\n
+&#009;{\n
+&#009;&#009;if(front ==-1)\n
+&#009;&#009;{\n
+&#009;&#009;&#009;front=front+1;\n
+&#009;&#009;}\n
+&#009;&#009;else if(front==rear)\n
+&#009;&#009;{\n
+&#009;&#009;&#009;front=-1;\n
+&#009;&#009;&#009;rear=-1;\n
+&#009;&#009;}\n
+&#009;&#009;else\n
+&#009;&#009;{&#009;\n
+&#009;&#009;int t=que[front];\n
+&#009;&#009;front=(front+1)%que.length;\n
+&#009;&#009;return(t);\n
+&#009;&#009;}\n
+&#009;&#009;return dequeue;\n
+&#009;}\n
+&#009;public boolean isEmpty()\n
+&#009;{\n
+&#009;&#009;return(front==size);\n
+&#009;}\n
+&#009;public boolean isFull()\n
+&#009;{\n
+&#009;&#009;if((rear == size-1) &#38; (front==-1))\n
+&#009;&#009;{\n
+&#009;&#009;&#009;return true;\n
+&#009;&#009;}\n
+&#009;&#009;else\n
+&#009;&#009;{\n
+&#009;&#009;&#009;return false;\n
+&#009;&#009;}\n
+&#009;}\n
+&#009;&#009;return(rear==size-1);\n
+&#009;}\n
+}
+</string>
+
+
+    <string name="tree">
+class Node\n
+{\n
+    int key;\n
+    Node left, right;\n
+ 
+    public Node(int item)\n
+    {\n
+        key = item;\n
+        right = left = null;\n
+    }\n
+}\n
+
+class BinaryTree\n
+{\n
+    
+    Node root;\n
+    BinaryTree(int key)\n
+    {\n
+        root = new Node(key);\n
+    }\n
+ 
+    BinaryTree()\n
+    {\n
+        root = null;\n
+    }\n
+
+\n
+\n
+	void printPostorder(Node node)\n
+    {\n
+        if (node == null)\n
+            return;\n
+        printPostorder(node.left);\n
+        printPostorder(node.right)\n;
+        System.out.print(node.key +  &#8220;  &#8220;);\n
+    }\n
+
+\n
+
+    void printPreorder(Node node)\n
+    {\n
+        if (node == null)\n
+            return;\n
+        System.out.print(node.key +  &#8220;  &#8220;);\n
+        printPreorder(node.left);\n
+        printPreorder(node.right);\n
+    }\n
+	\n
+	
+	  void printInorder(Node node)\n
+    {\n
+        if (node == null)\n
+            return;\n
+        printInorder(node.left);\n
+        System.out.print(node.key +  &#8220;  &#8220;);\n
+        printInorder(node.right);\n
+    }\n
+	
+	\n
+	void printPostorder() \n 
+	{    \n
+	printPostorder(root);\n 
+	}\n
+	void printPreorder()  \n 
+	{  \n
+	printPreorder(root); \n
+	}\n
+    void printInorder()   \n 
+	{     \n
+	printInorder(root); \n
+	}\n
+	
+ 
+ \n
+    public static void main(String[] args)\n
+    {\n
+        BinaryTree tree = new BinaryTree();\n
+        tree.root = new Node(44);\n
+        tree.root.left = new Node(17);\n
+        tree.root.right = new Node(78);\n
+		tree.root.left.right = new Node(32);\n
+        tree.root.right.right = new Node(88);\n
+		tree.root.right.left = new Node(50);\n
+		tree.root.right.left.right = new Node(62);\n
+		tree.root.right.left.left = new Node(48);\n
+        \n
+       System.out.println( &#8220;post oder is :-  &#8220;);\n
+	   tree.printPostorder();\n
+	   System.out.println( &#8220; &#8220;);\n
+	   System.out.println( &#8220;pre oder is :-  &#8220;);\n
+	   tree.printPreorder();\n
+	   System.out.println( &#8220; &#8220;);\n
+	   System.out.println( &#8220;In oder is :-  &#8220;);\n
+	   tree.printInorder();\n
+    }\n
+}
+ 
+
+</string>
+
+    <string name="binarysearch">
+
+    import java.util.Scanner;\n
+    public class BinarySearch\n
+    {\n
+    int binary(int a[],int low, int high, int key)\n
+    {\n
+    boolean b=false;\n
+    while(low&#60;=high)\n
+    {\n
+    int mid=(low+high)/2;\n
+    if(a[mid]&#60;key)\n
+    {\n
+    low=mid+1;\n
+    }\n
+    else if(a[mid]>key)\n
+    {\n
+    high=mid-1;\n
+    }\n
+    else\n
+    {	\n
+    return mid;\n
+    }\n
+    }\n
+    \n
+    return -1;\n
+    }\n
+    \n
+    public static void main(String[] args)\n
+    {\n
+    BinarySearch p=new BinarySearch();\n
+    int arr[]={2, 5, 7, 8, 12, 15, 18, 21, 23, 28, 35, 48, 54, 62};\n
+    System.out.println(&#8220;Enter your key&#8220;);\n
+    Scanner sc=new Scanner(System.in);\n
+    int key=sc.nextInt();\n
+    int low=0;\n
+    int high=arr.length;\n
+    int result=p.binary(arr,low,high,key);\n
+    System.out.println(&#8220;Position is &#8220;+result);\n
+    }\n
+    }
+    </string>
+
+
+    &#009;<string name="title_activity_arith">Arith</string>
+    <string name="title_activity_max">Max</string>
+    <string name="title_activity_sum">Sum</string>
+    <string name="title_activity_multiplicationtable">Multiplication table</string>
+    <string name="title_activity_checkprime">Check prime</string>
+    <string name="title_activity_factorial">Factorial</string>
+    <string name="title_activity_checksign">Check sign</string>
+    <string name="title_activity_checkmax">Check max</string>
+    <string name="title_activity_checkrighttriangle">Check right triangle</string>
+    <string name="title_activity_arr">Array</string>
+    <string name="title_activity_insertion">Insertion</string>
+    <string name="title_activity_reverse">Reverse</string>
+    <string name="title_activity_mx">Max min sum avg</string>
+    <string name="title_activity_square">Square</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_palindrome">Palindrome</string>
+    <string name="title_activity_ascending">Ascending</string>
+    <string name="title_activity_year1semi2">Data structure(java)</string>
+    <string name="title_activity_array_a">Array</string>
+    <string name="title_activity_insrt">Insert</string>
+    <string name="title_activity_asearch">search</string>
+    <string name="title_activity_duplicate">Duplicate</string>
+    <string name="title_activity_common1">Common1</string>
+    <string name="title_activity_common2">Common2</string>
+    <string name="title_activity_queue">Queue</string>
+    <string name="title_activity_que">Queue</string>
+    <string name="title_activity_testq">Test queue</string>
+    <string name="title_activity_qpal">Queue palindrome</string>
+    <string name="title_activity_linkedlist">Linkedlist</string>
+    <string name="title_activity_single">Single Linked list</string>
+    <string name="title_activity_cqu">Circular queue</string>
+    <string name="title_activity_tree">Binary tree</string>
+    <string name="title_activity_binarysearch">Binary search</string>
+    <string name="title_activity_srch">Search</string>
+
+</resources>

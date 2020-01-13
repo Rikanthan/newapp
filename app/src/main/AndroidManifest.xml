@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cs">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".srch"
+            android:label="@string/title_activity_srch"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".binarysearch"
+            android:label="@string/title_activity_binarysearch"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".tree"
+            android:label="@string/title_activity_tree"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".cqu"
+            android:label="@string/title_activity_cqu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".single"
+            android:label="@string/title_activity_single"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".linkedlist"
+            android:label="@string/title_activity_linkedlist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".qpal"
+            android:label="@string/title_activity_qpal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".testq"
+            android:label="@string/title_activity_testq"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".que"
+            android:label="@string/title_activity_que"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".queue"
+            android:label="@string/title_activity_queue"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common2"
+            android:label="@string/title_activity_common2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common1"
+            android:label="@string/title_activity_common1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".duplicate"
+            android:label="@string/title_activity_duplicate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".asearch"
+            android:label="@string/title_activity_asearch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".insrt"
+            android:label="@string/title_activity_insrt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".array_a"
+            android:label="@string/title_activity_array_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".year1semi2"
+            android:label="@string/title_activity_year1semi2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ascending"
+            android:label="@string/title_activity_ascending"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".palindrome"
+            android:label="@string/title_activity_palindrome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".search"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".square"
+            android:label="@string/title_activity_square"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mx"
+            android:label="@string/title_activity_mx"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".reverse"
+            android:label="@string/title_activity_reverse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".insertion"
+            android:label="@string/title_activity_insertion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".arr"
+            android:label="@string/title_activity_arr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checkrighttriangle"
+            android:label="@string/title_activity_checkrighttriangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checkmax"
+            android:label="@string/title_activity_checkmax"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checksign"
+            android:label="@string/title_activity_checksign"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".factorial"
+            android:label="@string/title_activity_factorial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checkprime"
+            android:label="@string/title_activity_checkprime"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".multiplicationtable"
+            android:label="@string/title_activity_multiplicationtable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sum"
+            android:label="@string/title_activity_sum"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".max"
+            android:label="@string/title_activity_max"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".arith"
+            android:label="@string/title_activity_arith"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".year1semi1"
+            android:label="@string/title_activity_year1semi1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
