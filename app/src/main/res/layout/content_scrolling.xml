@@ -14,52 +14,57 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="113dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:background="#30C7C7"
+        android:forceDarkAllowed="true"
         android:foregroundGravity="center"
-        android:text="Year 1 semi 1"
-        android:onClick="y1s1"/>
+        android:onClick="y1s1"
+        android:shadowColor="#0C0B0B"
+        android:text="Year 1 semi 1" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="#30C7C7"
         android:foregroundGravity="center"
-        android:text="YEAR 1 SEMI 2"
-        android:onClick="y1s2"/>
+        android:onClick="y1s2"
+        android:text="YEAR 1 SEMI 2" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="YEAR 2 SEMI 1"
-        android:onClick="y2s1"/>
+        android:background="#30C7C7"
+        android:text="YEAR 2 SEMI 1" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
+        android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="YEAR 2 SEMI 2"
-        android:onClick="y2s2"/>
+        android:background="#30C7C7"
+        android:text="YEAR 2 SEMI 2" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
+        android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="YEAR 3 SEMI 1"
-        android:onClick="y3s1"/>
+        android:background="#30C7C7"
+        android:onClick="y3s1"
+        android:text="YEAR 3 SEMI 1" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="YEAR 3 SEMI 2"
-        android:onClick="y3s2"/>
+        android:background="#30C7C7"
+        android:text="YEAR 3 SEMI 2" />
 
 </LinearLayout>

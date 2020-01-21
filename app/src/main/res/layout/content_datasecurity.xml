@@ -40,11 +40,13 @@
         android:id="@+id/button47"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hill cipher" />
+        android:text="hill cipher"
+        android:onClick="hill"/>
 
     <Button
         android:id="@+id/button48"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Railfence" />
+        android:text="Railfence"
+        android:onClick="rail"/>
 </LinearLayout>

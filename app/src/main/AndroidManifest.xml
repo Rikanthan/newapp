@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".rail"
+            android:label="@string/title_activity_rail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".hill"
+            android:label="@string/title_activity_hill"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".playfair"
             android:label="@string/title_activity_playfair"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".key"
             android:label="@string/title_activity_key"
