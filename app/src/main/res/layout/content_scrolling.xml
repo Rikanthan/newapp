@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue"
+    android:background="@drawable/vd"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="269dp"
+        android:background="@drawable/cs3"
         android:orientation="vertical"></LinearLayout>
 
     <Button
@@ -23,12 +24,13 @@
         android:forceDarkAllowed="true"
 
         android:foregroundGravity="center"
+        android:onClick="y1s1"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
         android:text="Year 1 semi 1"
-        android:textColor="#827717" />
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button2"
@@ -37,27 +39,27 @@
         android:layout_gravity="center"
         android:background="@drawable/button"
         android:foregroundGravity="center"
-        android:textColor="#827717"
         android:onClick="y1s2"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="YEAR 1 SEMI 2" />
+        android:text="YEAR 1 SEMI 2"
+        android:textColor="#F8F8F3" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="#827717"
         android:background="@drawable/button"
         android:foregroundGravity="center"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="YEAR 2 SEMI 1" />
+        android:text="YEAR 2 SEMI 1"
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button7"
@@ -66,12 +68,12 @@
         android:layout_gravity="center"
         android:background="@drawable/button"
         android:foregroundGravity="center"
-        android:textColor="#827717"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="YEAR 2 SEMI 2" />
+        android:text="YEAR 2 SEMI 2"
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button8"
@@ -79,14 +81,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button"
-        android:textColor="#827717"
         android:foregroundGravity="center"
         android:onClick="y3s1"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="YEAR 3 SEMI 1" />
+        android:text="YEAR 3 SEMI 1"
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button9"
@@ -96,10 +98,10 @@
         android:background="@drawable/button"
         android:foregroundGravity="center"
         android:shadowColor="#A8A8A8"
-        android:textColor="#827717"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="YEAR 3 SEMI 2" />
+        android:text="YEAR 3 SEMI 2"
+        android:textColor="#F5F4F0" />
 
 </LinearLayout>
