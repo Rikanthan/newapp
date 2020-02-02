@@ -2,63 +2,80 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/linearLayout">
+    android:background="@drawable/vd"
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
+        android:background="@drawable/dsa"
         android:orientation="vertical"></LinearLayout>
 
     <Button
         android:id="@+id/button24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="array"
         android:text="Arrays"
-        android:onClick="array"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="stack"
+
         android:text="stack"
-        android:onClick="stack"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="queue"
         android:text="queue"
-        android:onClick="queue"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button27"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="search"
         android:text="searching"
-        android:onClick="search"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button28"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="sort"
         android:text="sorting"
-        android:onClick="sort"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button29"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="linkedlist"
         android:text="linkedlist"
-        android:onClick="linkedlist"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button30"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="tree"
         android:text="tree"
-        android:onClick="tree"/>
+        android:textColor="#F5F4F0" />
 </LinearLayout>
