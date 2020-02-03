@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/newbac"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".tree"
     tools:showIn="@layout/activity_tree">
@@ -12,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/tree" />
+        android:text="@string/tree"
+        android:textColor="#F5F4F0" />
 
 </androidx.core.widget.NestedScrollView>
