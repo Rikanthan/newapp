@@ -59,7 +59,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     public  void y3s1(View v)
     {
-        Intent intent=new Intent(this, year3semi1.class);
+        Intent intent=new Intent(this, datasecurity.class);
         startActivity(intent);
     }
     /*

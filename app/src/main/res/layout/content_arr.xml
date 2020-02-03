@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/vd"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".arr"
@@ -14,48 +15,62 @@
         android:id="@+id/button23"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="insertion"
         android:text="insertion"
-        android:onClick="insertion"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="reverse"
         android:text="reverse"
-        android:onClick="reverse"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="maxmin"
         android:text="max min sum avg"
-        android:onClick="maxmin"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="square"
         android:text="Square numbers"
-        android:onClick="square"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="search"
         android:text="search"
-        android:onClick="search"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="palindrome"
         android:text="palindrome"
-        android:onClick="palindrome"/>
+        android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="ascending"
         android:text="Ascending"
-        android:onClick="ascending"/>
+        android:textColor="#F5F4F0" />
 </LinearLayout>
