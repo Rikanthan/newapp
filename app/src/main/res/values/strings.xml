@@ -1697,7 +1697,7 @@ public class hill\n
 &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_binarysearch">Binary search</string>
 &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_srch"></string>
 &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_year3semi1">Year3semi1</string>
-&#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_datasecurity">Data security</string>
+&#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_datasecurity"></string>
 &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_ceasar">Ceasar cipher</string>
 &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_key">key</string>
 &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_playfair">playfair cipher</string>
