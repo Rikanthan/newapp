@@ -19,7 +19,7 @@
         android:id="@+id/button24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="array"
         android:text="Arrays"
         android:textColor="#F5F4F0" />
@@ -28,7 +28,7 @@
         android:id="@+id/button25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="stack"
 
         android:text="stack"
@@ -38,7 +38,7 @@
         android:id="@+id/button26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="queue"
         android:text="queue"
         android:textColor="#F5F4F0" />
@@ -47,7 +47,7 @@
         android:id="@+id/button27"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="search"
         android:text="searching"
         android:textColor="#F5F4F0" />
@@ -56,7 +56,7 @@
         android:id="@+id/button28"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="sort"
         android:text="sorting"
         android:textColor="#F5F4F0" />
@@ -65,7 +65,7 @@
         android:id="@+id/button29"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="linkedlist"
         android:text="linkedlist"
         android:textColor="#F5F4F0" />
@@ -74,7 +74,7 @@
         android:id="@+id/button30"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="tree"
         android:text="tree"
         android:textColor="#F5F4F0" />
