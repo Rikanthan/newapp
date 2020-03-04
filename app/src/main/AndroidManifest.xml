@@ -10,9 +10,41 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".heap"
+            android:label="@string/title_activity_heap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".quick"
+            android:label="@string/title_activity_quick"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".merge"
+            android:label="@string/title_activity_merge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bubble"
+            android:label="@string/title_activity_bubble"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".insertion_sort"
+            android:label="@string/title_activity_insertion_sort"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".selection"
+            android:label="@string/title_activity_selection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sorting"
+            android:label="@string/title_activity_sorting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".stack"
+            android:label="@string/title_activity_stack"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".rail"
             android:label="@string/title_activity_rail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".hill"
             android:label="@string/title_activity_hill"

@@ -24,6 +24,11 @@ public class year1semi2 extends AppCompatActivity {
         Intent intent = new Intent(this, array_a.class);
         startActivity(intent);
     }
+    public void stack(View v)
+    {
+        Intent intent = new Intent(this, stack.class);
+        startActivity(intent);
+    }
 
     public void queue(View v)
     {
@@ -34,6 +39,11 @@ public class year1semi2 extends AppCompatActivity {
     public void linkedlist(View v)
     {
         Intent intent = new Intent(this, linkedlist.class);
+        startActivity(intent);
+    }
+    public void sort(View v)
+    {
+        Intent intent = new Intent(this, sorting.class);
         startActivity(intent);
     }
 
