@@ -2093,11 +2093,11 @@ class MergeSort \n
     &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_rail">Railfence cypher</string>
     <string name="title_activity_stack">stack</string>
     <string name="title_activity_sorting">sorting</string>
-    <string name="title_activity_selection">selection</string>
-    <string name="title_activity_insertion_sort">insertion_sort</string>
-    <string name="title_activity_bubble">bubble</string>
-    <string name="title_activity_merge">merge</string>
-    <string name="title_activity_quick">quick</string>
-    <string name="title_activity_heap">heap</string>
+    <string name="title_activity_selection">Selection sort</string>
+    <string name="title_activity_insertion_sort">Insertion sort</string>
+    <string name="title_activity_bubble">Bubble sort</string>
+    <string name="title_activity_merge">Merge sort</string>
+    <string name="title_activity_quick">Quick sort</string>
+    <string name="title_activity_heap">Heap sort</string>
 
 </resources>
