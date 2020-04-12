@@ -1,6 +1,5 @@
 package com.example.cs;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -11,12 +10,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class linkedlist extends AppCompatActivity {
+public class node extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linkedlist);
+        setContentView(R.layout.activity_node);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -28,17 +27,5 @@ public class linkedlist extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-    }
-
-
-    public void single(View v)
-    {
-        Intent intent = new Intent(this, single.class);
-        startActivity(intent);
-    }
-    public void doubl(View v)
-    {
-        Intent intent = new Intent(this, doublelist.class);
-        startActivity(intent);
     }
 }

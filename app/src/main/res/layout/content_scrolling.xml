@@ -16,7 +16,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="113dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
 
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="113dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button2"
@@ -49,7 +49,7 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="112dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button2"
@@ -63,7 +63,7 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="113dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button2"
@@ -72,12 +72,13 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
+        android:onClick="y2s2"
         android:text="YEAR 2 SEMI 2"
         android:textColor="#F5F4F0" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="112dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button2"
@@ -92,7 +93,7 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="110dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button2"

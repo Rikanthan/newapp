@@ -10,9 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".year2semi2"
+            android:label="@string/title_activity_year2semi2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".testdouble"
+            android:label="@string/title_activity_testdouble"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".doublelink"
+            android:label="@string/title_activity_doublelink"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".node"
+            android:label="@string/title_activity_node"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".doublelist"
+            android:label="@string/title_activity_doublelist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".heap"
             android:label="@string/title_activity_heap"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".quick"
             android:label="@string/title_activity_quick"

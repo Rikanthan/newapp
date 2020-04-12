@@ -2,36 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/linkedba"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".linkedlist"
-    tools:showIn="@layout/activity_linkedlist">
+    android:background="@drawable/vd"
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="180dp"
+        android:background="@drawable/linked"
         android:orientation="vertical"></LinearLayout>
 
     <Button
-        android:id="@+id/button39"
+        android:id="@+id/button24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button2"
-        android:onClick="single"
-        android:text="single linked list"
+        android:onClick="node"
+        android:text="Node"
         android:textColor="#F5F4F0" />
 
     <Button
-        android:id="@+id/button40"
+        android:id="@+id/button25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button2"
-        android:text="Double linked list"
-        android:onClick="doubl"
+        android:onClick="doublel"
+
+        android:text="Double Linked list"
         android:textColor="#F5F4F0" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:onClick="Testdouble"
+        android:text="Test double linked list"
+        android:textColor="#F5F4F0" />
+
 
 </LinearLayout>

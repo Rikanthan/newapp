@@ -88,9 +88,8 @@
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"when a user tries to pick up one of cards.\n\n"
 &#160;&#160;&#160;&#160;&#160;&#160;</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="action_settings">Settings</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_year1semi1">C++ Basic</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_scrolling">Computer science(TCEUSL)</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="arithmetric">#include<p>&#60;
+    <string name="title_activity_year1semi1">C++ Basic</string>
+    <string name="title_activity_scrolling">Computer science(TCEUSL)</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="arithmetric">#include<p>&#60;
 </p>iostream<p>&#62;</p>\n
 using namespace std;\n
 int main()\n
@@ -2060,44 +2059,311 @@ class MergeSort \n
         </codeblock>
     </string>
 
+    <string name='doublelinkedlist'>
+    <codeblock>
+        public class Doublelinkedlist\n
+        {\n
+        &#160; &#160; &#160;Node head;\n
 
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_arith">Arith</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_max">Max</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_sum">Sum</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_multiplicationtable">Multiplication table</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_checkprime">Check prime</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_factorial">Factorial</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_checksign">Check sign</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_checkmax">Check max</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_checkrighttriangle">Check right triangle</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_arr"></string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_insertion">Insertion</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_reverse">Reverse</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_mx">Max min sum avg</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_square">Square</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_search">Search</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_palindrome">Palindrome</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_ascending">Ascending</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_year1semi2">Data structure(java)</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_array_a">Array</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_insrt">Insert</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_asearch">search</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_duplicate">Duplicate</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_common1">Common1</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_common2">Common2</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_queue"></string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_que">Queue</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_testq">Test queue</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_qpal">Queue palindrome</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_linkedlist"></string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_single">Single Linked list</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_cqu">Circular queue</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_tree">Binary tree</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_binarysearch">Binary search</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_srch"></string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_year3semi1">Year3semi1</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_datasecurity"></string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_ceasar">Ceasar cipher</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_key">key</string> &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_playfair">playfair cipher</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_hill">Hill cypher</string>
-    &#160;&#160;&#160;&#160;&#160;&#160;<string name="title_activity_rail">Railfence cypher</string>
+        &#160; &#160; &#160;public void add(int data)\n
+        &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node node=new Node();\n
+        &#160; &#160; &#160; &#160; &#160; &#160;node.data=data;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;node.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;node.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;if(head==null)\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;head=node;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160; &#160; &#160; &#160;else\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;Node n= head;\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;while(n.next!=null)\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;n=n.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;n.next=node;\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;node.prev=n;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;} &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160;public void addstart(int data)\n
+        &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node temp=new Node();\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.data=data;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.next=head;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;head.prev=temp;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;head=temp;\n
+        &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;\n
+        &#160; &#160; &#160;public void addmiddle(int index,int data)\n
+        &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node temp=new Node();\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.data=data;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node Store=new Node();\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.data=data;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160;Node p=head;\n
+        &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;for(int i=0; i &#60; index-1; i++)\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;p=p.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.next=p.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;p.next=temp;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.prev=p;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.next=Store.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.prev=temp;\n
+        &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;public void addend(int data)\n
+        &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node temp=new Node();\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.data=data;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node p=head;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;while(p.next!=null)\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;p=p.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160; &#160; &#160; &#160;p.next=temp;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.prev=p;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;temp.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;public void deletestart()\n
+        &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node p=head;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;head=head.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;head.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;public void deletemiddle(int index)\n
+        &#160; &#160; &#160;{ &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node store=new Node();
+
+        &#160; &#160; &#160; &#160; &#160; &#160;store.next=null;
+        &#160; &#160; &#160; &#160; &#160; &#160;store.prev=null;
+        &#160; &#160; &#160; &#160; &#160; &#160;
+        &#160; &#160; &#160; &#160; &#160; &#160;Node p=head;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;for(int i=0; i &#60; index-1; i++)\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;p=p.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160; &#160; &#160; &#160;store.next=p.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;store.prev=p.prev;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;store.next.prev=store.prev;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;store.prev.next=store.next;\n
+        &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;public void deleteend()\n
+        &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node Store=new Node();\n
+
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.next=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.prev=null;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Node p=head;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;while(p.next!=null)\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;p=p.next;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.prev=p.prev;\n
+        &#160; &#160; &#160; &#160; &#160; &#160;Store.prev.next=null;\n
+        &#160; &#160; &#160;}\n
+        &#160; &#160; &#160;public void print()\n
+        &#160; &#160; &#160; &#160; &#160; &#160;{\n
+        Node temp = head;\n
+        System.out.print("Doubly Linked List: ");\n
+        while(temp!=null){\n
+        System.out.print(" " + temp.data);\n
+        temp = temp.next;\n
+        }\n
+        System.out.println();\n
+
+        &#160; &#160; &#160; &#160; &#160; &#160;}\n
+        }
+        </codeblock>
+    </string>
+
+
+    <string name='testdouble'>
+<codeblock>
+
+public class Testingdoublelinkedlist\n
+{\n
+ &#160; &#160; &#160;public static void main(String [] args)\n
+ &#160; &#160; &#160;{\n
+ &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;Doublelinkedlist obb=new Doublelinkedlist();\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.add(12);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.add(13);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.addstart(2);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.addend(23);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.addmiddle(2,100);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.deleteend();\n
+
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;obb.print();\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160;}\n
+}\n
+</codeblock>
+        
+</string>
+
+    <string name='node'>
+<codeblock>
+public class Node\n
+{\n
+ &#160; &#160; &#160;int data;\n
+ &#160; &#160; &#160;Node next;\n
+ &#160; &#160; &#160;Node prev;\n
+}\n
+</codeblock>
+</string>
+
+
+    <string name="dda">
+<codeblock>
+
+import java.applet.*; \n
+import java.awt.*;\n
+import java.util.*;\n
+
+public class ddaalg extends Applet{\n
+ &#160; &#160; &#160;int centerX, centerY, dGrid = 1, maxX, maxY;\n
+    \n
+void initgr() {\n
+ &#160; &#160; &#160;Dimension d; &#160; &#160; &#160;// get the window size and compute minimum, maximum and center\n
+ &#160; &#160; &#160;d = getSize();\n
+ &#160; &#160; &#160;maxX = d.width - 1; \n
+ &#160; &#160; &#160;maxY = d.height - 1;\n
+ &#160; &#160; &#160;centerX = maxX/2; centerY = maxY/2;\n
+    &#160; &#160; &#160;}\n
+ &#160; &#160; &#160;\n
+void drawLine(Graphics g, int x1, int y1, int x2, int y2) { // DDA Algorithm \n
+ &#160; &#160; &#160;double xc,yc;\n
+ &#160; &#160; &#160;double dx,dy,steps,x,y,k;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160;dx=x2-x1;\n
+ &#160; &#160; &#160;dy=y2-y1;\n
+
+ &#160; &#160; &#160;if(Math.abs(dx) &#62; Math.abs(dy))\n
+ &#160; &#160; &#160; &#160; &#160; &#160;steps=Math.abs(dx);\n
+ &#160; &#160; &#160;else\n
+ &#160; &#160; &#160; &#160; &#160; &#160;steps=Math.abs(dy);\n
+
+ &#160; &#160; &#160; &#160; &#160; &#160;xc=(dx/steps);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;yc=(dy/steps);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;x=x1;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;y=y1;\n
+     &#160; &#160; &#160;    \n
+ &#160; &#160; &#160;for(k=1;k &#60; =steps;k++){\n
+ &#160; &#160; &#160; &#160; &#160; &#160;x=x+xc;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;y=y+yc;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;g.fillOval((int)x,(int)y,5,5);\n
+ &#160; &#160; &#160;} &#160; &#160; &#160;\n
+}\n
+\n
+ &#160; &#160; &#160;public void paint(Graphics g) {\n
+ &#160; &#160; &#160; &#160; &#160; &#160;initgr();\n
+
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;Long l= new Long(Math.round(100*0.82));//100*cos(54)\n
+ &#160; &#160; &#160; &#160; &#160; &#160;Long l1= new Long(Math.round(100*0.66));//100*cos(18)\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;int Y1=l.intValue();//100*cos(54)\n
+ &#160; &#160; &#160; &#160; &#160; &#160;int X1=l1.intValue();//100*cos(18)\n
+ &#160; &#160; &#160; &#160; &#160; &#160;drawLine(g, centerX, centerY, centerX+Y1, centerY+Y1);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;drawLine(g,centerX+Y1, centerY+Y1 , centerX+50, centerY+X1+Y1);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;drawLine(g,  centerX+50, centerY+X1+Y1, centerX-50, centerY+X1+Y1);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;drawLine(g, centerX-50, centerY+X1+Y1, centerX-Y1,  centerY+Y1);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;drawLine(g, centerX-Y1, centerY+Y1, centerX, centerY);\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;\n
+ &#160; &#160; &#160; &#160; &#160; &#160;//drawCircle(g, 230, 100, 40);\n
+ &#160; &#160; &#160;} &#160; &#160; &#160;\n
+\n
+}\n
+
+/* &#60; applet code="ddaalg.class" width="1000" height="1000" &#62; \n
+  &#60; /applet &#62; \n
+\n
+ */\n
+ </codeblock>
+ </string>
+
+
+    <string name="title_activity_arith">Arith</string>
+    <string name="title_activity_max">Max</string>
+    <string name="title_activity_sum">Sum</string>
+    <string name="title_activity_multiplicationtable">Multiplication table</string>
+    <string name="title_activity_checkprime">Check prime</string>
+    <string name="title_activity_factorial">Factorial</string>
+    <string name="title_activity_checksign">Check sign</string>
+    <string name="title_activity_checkmax">Check max</string>
+    <string name="title_activity_checkrighttriangle">Check right triangle</string>
+    <string name="title_activity_arr"></string>
+    <string name="title_activity_insertion">Insertion</string>
+    <string name="title_activity_reverse">Reverse</string>
+    <string name="title_activity_mx">Max min sum avg</string>
+    <string name="title_activity_square">Square</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_palindrome">Palindrome</string>
+    <string name="title_activity_ascending">Ascending</string>
+    <string name="title_activity_year1semi2">Data structure(java)</string>
+    <string name="title_activity_array_a">Array</string>
+    <string name="title_activity_insrt">Insert</string>
+    <string name="title_activity_asearch">search</string>
+    <string name="title_activity_duplicate">Duplicate</string>
+    <string name="title_activity_common1">Common1</string>
+    <string name="title_activity_common2">Common2</string>
+    <string name="title_activity_queue"></string>
+    <string name="title_activity_que">Queue</string>
+    <string name="title_activity_testq">Test queue</string>
+    <string name="title_activity_qpal">Queue palindrome</string>
+    <string name="title_activity_linkedlist"></string>
+    <string name="title_activity_single">Single Linked list</string>
+    <string name="title_activity_cqu">Circular queue</string>
+    <string name="title_activity_tree">Binary tree</string>
+    <string name="title_activity_binarysearch">Binary search</string>
+    <string name="title_activity_srch"></string>
+    <string name="title_activity_year3semi1">Year3semi1</string>
+    <string name="title_activity_datasecurity"></string>
+    <string name="title_activity_ceasar">Ceasar cipher</string>
+    <string name="title_activity_key">key</string>
+    <string name="title_activity_playfair">playfair cipher</string>
+    <string name="title_activity_hill">Hill cypher</string>
+    <string name="title_activity_rail">Railfence cypher</string>
     <string name="title_activity_stack">stack</string>
     <string name="title_activity_sorting">sorting</string>
-    <string name="title_activity_selection">Selection sort</string>
+    <string name="title_activity_selection">Selection sort1</string>
     <string name="title_activity_insertion_sort">Insertion sort</string>
     <string name="title_activity_bubble">Bubble sort</string>
     <string name="title_activity_merge">Merge sort</string>
     <string name="title_activity_quick">Quick sort</string>
     <string name="title_activity_heap">Heap sort</string>
+    <string name="title_activity_doublelist"></string>
+    <string name="title_activity_node">node</string>
+    <string name="title_activity_doublelink">doublelink</string>
+    <string name="title_activity_testdouble">testdouble</string>
+    <string name="title_activity_year2semi2"></string>
 
 </resources>
