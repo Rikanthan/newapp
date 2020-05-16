@@ -32,6 +32,12 @@ private Button button4;
             startActivity(intent);
         }
 
+    public void more(View v)
+    {
+        Intent intent = new Intent(this, more.class);
+        startActivity(intent);
+    }
+
 
 
 

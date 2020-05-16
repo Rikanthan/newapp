@@ -2311,8 +2311,6 @@ void drawLine(Graphics g, int x1, int y1, int x2, int y2) { // DDA Algorithm \n
  </string>
 
 
-
-
     <string name="title_activity_arith">Arith</string>
     <string name="title_activity_max">Max</string>
     <string name="title_activity_sum">Sum</string>
@@ -2367,5 +2365,6 @@ void drawLine(Graphics g, int x1, int y1, int x2, int y2) { // DDA Algorithm \n
     <string name="title_activity_doublelink">doublelink</string>
     <string name="title_activity_testdouble">testdouble</string>
     <string name="title_activity_year2semi2"></string>
+    <string name="title_activity_more">more</string>
 
 </resources>

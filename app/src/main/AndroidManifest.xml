@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".more"
+            android:label="@string/title_activity_more"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".year2semi2"
             android:label="@string/title_activity_year2semi2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".testdouble"
             android:label="@string/title_activity_testdouble"
