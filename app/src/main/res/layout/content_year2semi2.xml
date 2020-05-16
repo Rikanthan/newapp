@@ -20,7 +20,7 @@
         android:id="@+id/button44"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="key"
+
         android:text="DDA"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"/>
@@ -29,7 +29,7 @@
         android:id="@+id/button45"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="playfair"
+
         android:text="Breshanham"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"/>
@@ -38,7 +38,7 @@
         android:id="@+id/button46"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="key"
+
         android:text="Mid point circle"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"/>
@@ -47,7 +47,7 @@
         android:id="@+id/button47"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="hill"
+
         android:text="Breshanham circle"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"/>
@@ -56,7 +56,7 @@
         android:id="@+id/button48"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="rail"
+
         android:text="Scalling"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"
@@ -65,7 +65,7 @@
         android:id="@+id/button49"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="hill"
+
         android:text="Shearing"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"/>
@@ -74,7 +74,7 @@
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="rail"
+
         android:text="Rotating"
         android:textColor="#F5F4F0"
         android:background="@drawable/button2"

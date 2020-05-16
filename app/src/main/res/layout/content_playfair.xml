@@ -9,6 +9,7 @@
     tools:showIn="@layout/activity_playfair">
 
     <TextView
+        android:id="@+id/playfair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
